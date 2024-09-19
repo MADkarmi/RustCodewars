@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello wasm-pack!</title>
+    <style>
+      body {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div id="performanceIndicator" ></div>
+      <div id="maxGnerationTime" ></div>
+      <div id="minGeberationTime" ></div>
+      <input type="number" id="zoom" title="Zoom Value" value="0">
+      <input type="number" id="zoom_point_x" title="X Zoom Value" value="0.37">
+      <input type="number" id="zoom_point_y" title="Y Zoom Value" value="-0.300">
+      <input type="number" id="iteration" title="Number of Iterations" value="100">
+      <p></p>
+      <label for="transparency">Transparency</label>
+      <input type="range" id="transparency" max="255" min="0" value="0"/>
+      <button id="generate"> Start Generating</button>
+      <button id="reset"> Reset</button>
+    </div>
+    <canvas id="fractal-canvas"></canvas>
+
+    <script src="./bootstrap.js"></script>
+  </body>
+</html>
